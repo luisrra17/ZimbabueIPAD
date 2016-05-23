@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/fondo_botones_cant_jugadores"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/fondo_botones_cant_jugadores"
+        android:id="@+id/relativeLayout2"
+        android:layout_marginTop="94dp"
+        android:layout_below="@+id/Jugador3"
+        android:layout_alignEnd="@+id/Jugador3">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:background="@drawable/fondo_botones_cant_jugadores"
+        android:id="@+id/relativeLayout4"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:layout_marginTop="269dp">
+
+        <Button
+            android:layout_width="87dp"
+            android:layout_height="90dp"
+            android:id="@+id/Jugador4"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cuatrojugadores"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/SeleccionarCantJugadores"
+        android:id="@+id/textViewCantJugadores"
+        android:textSize="37dp"
+        android:textColor="#000000"
+        android:background="@drawable/fondo_titulo_cantjugadores"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Jugador3"
+        android:background="@drawable/tresjugadores"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toStartOf="@+id/relativeLayout" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/Jugador2"
+        android:background="@drawable/dosjugadores"
+        android:textSize="17dp"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/relativeLayout2" />
+
+</RelativeLayout>
+
+
