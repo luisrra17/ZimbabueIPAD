@@ -10,9 +10,21 @@
         android:layout_height="100dp"
         android:background="@drawable/fondo_botones_cant_jugadores"
         android:id="@+id/relativeLayout"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_centerHorizontal="true">
 
+        android:layout_above="@+id/relativeLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:id="@+id/Jugador2"
+            android:background="@drawable/dosjugadores"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -20,9 +32,8 @@
         android:layout_height="110dp"
         android:background="@drawable/fondo_botones_cant_jugadores"
         android:id="@+id/relativeLayout2"
-        android:layout_marginTop="94dp"
-        android:layout_below="@+id/Jugador3"
-        android:layout_alignEnd="@+id/Jugador3">
+        android:layout_alignBottom="@+id/Jugador3"
+        android:layout_toStartOf="@+id/relativeLayout">
 
     </RelativeLayout>
 
@@ -31,9 +42,8 @@
         android:layout_height="110dp"
         android:background="@drawable/fondo_botones_cant_jugadores"
         android:id="@+id/relativeLayout4"
-        android:layout_below="@+id/relativeLayout2"
-        android:layout_toEndOf="@+id/relativeLayout"
-        android:layout_marginTop="269dp">
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_toEndOf="@+id/relativeLayout">
 
         <Button
             android:layout_width="87dp"
@@ -66,17 +76,6 @@
         android:background="@drawable/tresjugadores"
         android:textSize="18dp"
         android:textColor="#ffffff"
-        android:layout_below="@+id/relativeLayout"
-        android:layout_toStartOf="@+id/relativeLayout" />
-
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:id="@+id/Jugador2"
-        android:background="@drawable/dosjugadores"
-        android:textSize="17dp"
-        android:textColor="#ffffff"
-        android:layout_marginRight="10dp"
         android:layout_centerVertical="true"
         android:layout_alignEnd="@+id/relativeLayout2" />
 
