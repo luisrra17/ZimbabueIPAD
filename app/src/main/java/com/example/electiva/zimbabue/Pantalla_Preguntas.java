@@ -137,7 +137,7 @@ public class Pantalla_Preguntas extends AppCompatActivity {
         if(!yaEligioPregunta){
             comenzarACorrerTiempo();
             textoPregunta1.setText(construirPregunta(preguntaRandom));
-            textoPregunta1.setTextSize(30);
+            textoPregunta1.setTextSize(60);
 
             btnOpcionA.setText(String.valueOf(listaRespuestas.get(0)));
             btnOpcionB.setText(String.valueOf(listaRespuestas.get(1)));
@@ -150,7 +150,7 @@ public class Pantalla_Preguntas extends AppCompatActivity {
         if(!yaEligioPregunta){
             comenzarACorrerTiempo();
             textoPregunta2.setText(construirPregunta(preguntaRandom));
-            textoPregunta2.setTextSize(30);
+            textoPregunta2.setTextSize(60);
 
             btnOpcionA.setText(String.valueOf(listaRespuestas.get(0)));
             btnOpcionB.setText(String.valueOf(listaRespuestas.get(1)));
@@ -163,7 +163,7 @@ public class Pantalla_Preguntas extends AppCompatActivity {
         if(!yaEligioPregunta) {
             comenzarACorrerTiempo();
             textoPregunta3.setText(construirPregunta(preguntaRandom));
-            textoPregunta3.setTextSize(30);
+            textoPregunta3.setTextSize(60);
 
             btnOpcionA.setText(String.valueOf(listaRespuestas.get(0)));
             btnOpcionB.setText(String.valueOf(listaRespuestas.get(1)));
@@ -291,7 +291,7 @@ public class Pantalla_Preguntas extends AppCompatActivity {
     }
 
     public String construirPregunta(Pregunta pregunta){
-        String preguntaEnTexto = String.valueOf(pregunta.getOperandoUno()) + "\n";
+        String preguntaEnTexto = "\t" + String.valueOf(pregunta.getOperandoUno()) + "\n";
 
         if(pregunta.getOperacion().equals("+")){
             preguntaEnTexto += "+";
